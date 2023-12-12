@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+
+    <scene>
+      <shadows>0</shadows>
+    </scene>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <name>pointcloud2gazebo</name>
+      <uri>model://pointcloud2gazebo</uri>
+      <static>true</static>
+      <pose>0.25 -0.3 0 0 0 0</pose>
+    </include>
+
+  </world>
+</sdf>
